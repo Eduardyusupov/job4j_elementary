@@ -1,7 +1,6 @@
 package ru.job4j;
 
 public class Converter {
-
     /**
      * Метод проверяет конвертацию рублей к евро.
      *
