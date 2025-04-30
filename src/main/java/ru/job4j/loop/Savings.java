@@ -7,15 +7,11 @@ public class Savings {
         double total = 0;
         double percentSum;
         do {
-            if (years == 0) {
-                total += annualDeposit;
-                years++;
-            } else {
-                percentSum = total * (percent / 100);
-                total += percentSum + annualDeposit;
-                years++;
-            }
+            percentSum = total * (percent / 100);
+            total += percentSum + annualDeposit;
+            years++;
         } while (total < goal);
         return years;
     }
+
 }
