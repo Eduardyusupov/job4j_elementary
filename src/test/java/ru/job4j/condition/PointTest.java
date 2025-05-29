@@ -33,4 +33,13 @@ public class PointTest {
         double output = pointOne.distance(pointTwo);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    void whenPointTwoFiveFourAndFiveSixSeven() {
+        Point c = new Point(2, 5, 4);
+        Point d = new Point(5, 6, 7);
+        double expected = 4.35;
+        double output = c.distance3d(d);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
 }
